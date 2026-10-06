@@ -1,0 +1,10 @@
+step,rows_remaining
+Исходные строки,1129
+LapTime есть,1127
+IsAccurate = True,1024
+TrackStatus = 1,1006
+Нет PitInTime,1006
+Нет PitOutTime,1006
+Compound заполнен,1006
+TyreLife заполнен,1006
+Deleted = False,988

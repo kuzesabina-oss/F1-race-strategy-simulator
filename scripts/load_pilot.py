@@ -7,7 +7,7 @@ Path("data/raw").mkdir(parents=True, exist_ok=True)
 fastf1.Cache.enable_cache("data/cache")
 
 session = fastf1.get_session(2024, "Bahrain", "R")
-session.load(laps=True, telemetry=False, weather=False, messages=False)
+session.load(laps=True, telemetry=False, weather=False, messages=True)
 
 laps = session.laps.copy()
 
@@ -17,3 +17,4 @@ print(laps.head())
 
 laps.to_csv("data/raw/bahrain_2024_laps.csv", index=False)
 print("Сохранено: data/raw/bahrain_2024_laps.csv")
+
